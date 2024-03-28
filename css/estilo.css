@@ -1,0 +1,168 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(218, 215, 205);
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    min-height: 33vh;
+    background: rgb(52, 78, 65);
+    background-repeat:no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo{
+    margin-top: 50px;
+    margin-left: 250px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transform: rotate(25deg);
+    
+}
+.logo:hover{
+    filter: drop-shadow(0 0 6px #000);
+}
+
+/* NAVIGATION */
+nav{
+    height: 130px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar-btn {
+font-size: 25px;
+color: rgb(0, 0, 0);
+margin-right: 25px;
+cursor: pointer;
+}
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgb(0, 0, 0, .75);
+    text-align: center;
+    transition: all .5s;
+
+}
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a {
+color: #fff;
+font-size: 15px;
+text-transform: uppercase;
+font-weight: 600;
+}
+
+.nav-menu li a:hover{
+    text-shadow: 0 0 6 #000;
+}
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb(163, 177, 138);
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+/* BANNER TEXT */
+
+.bannet-text{
+
+    padding: 1 30px;
+    text-align: center;
+    color: rgb(163, 177, 138);
+    margin: 50px;
+    font-family: "kalam", cursive;
+
+}
+.bannet-text:hover {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.bannet-text h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto;
+}
+
+.button1 {
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    padding: 10px;
+    background-color: rgba(163, 177, 138);
+    border-radius: 10px; 
+    border: 1px solid rgba(163, 177, 138);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.button1:hover {
+    background-color: rgb(23, 97, 33, 0.685);
+    color: #fff;
+    transition: .5s;
+}
+
+/* RESPONSIVE FOR DESKTOP */
+
+@media screen and (min-width: 768px){
+    .logo {
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+
+nav {
+height: 120px;
+}
+
+.bar-btn {
+display: none;
+}
+
+.nav-menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+}
+
+.nav-menu li a {
+    font-size: 16px;
+}
+}
