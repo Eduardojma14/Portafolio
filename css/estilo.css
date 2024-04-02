@@ -14,20 +14,18 @@ a{
 
 header{
     width: 100%;
-    min-height: 33vh;
+    min-height: 40vh;
     background: rgb(52, 78, 65);
     background-repeat:no-repeat;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .logo{
-    margin-top: 50px;
-    margin-left: 250px;
+    margin-top: 40px;
+    margin-left: 270px;
     width: 150px;
     height: 150px;
     cursor: pointer;
-    transform: rotate(25deg);
-    
 }
+
 .logo:hover{
     filter: drop-shadow(0 0 6px #000);
 }
@@ -94,11 +92,8 @@ font-weight: 600;
 /* BANNER TEXT */
 
 .bannet-text{
-
-    padding: 1 30px;
     text-align: center;
     color: rgb(163, 177, 138);
-    margin: 50px;
     font-family: "kalam", cursive;
 
 }
@@ -124,7 +119,7 @@ font-weight: 600;
 }
 
 .button1:hover {
-    background-color: rgb(23, 97, 33, 0.685);
+    background-color: rgb(52, 78, 65);
     color: #fff;
     transition: .5s;
 }
@@ -133,8 +128,8 @@ font-weight: 600;
 
 @media screen and (min-width: 768px){
     .logo {
-        margin-top: 70px;
-        margin-left: 50px;
+        margin-top: 100px;
+        margin-left: 80px;
     }
 
 nav {
@@ -166,3 +161,100 @@ display: none;
     font-size: 16px;
 }
 }
+
+/* Sobre Mi */
+
+.sobre-mi-oscuro{
+    display: flex;
+    min-height: 33vh;
+    background: rgb(163, 177, 138);
+}
+
+section h2{
+    text-align: center;
+    color: rgb(52, 78, 65);
+    margin: 50px;
+    font-family: "kalam", cursive;
+}
+
+section h2:hover{
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+section p{
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: center;
+    color: rgb(52, 78, 65);
+    font-size: 1.4rem;
+}
+
+@media (max-width: 600px) {
+    p{
+    display: flex;
+    text-align: center;
+}
+}
+
+ /* car */
+
+#car-proyecto{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background: rgb(218, 215, 205);
+}
+
+.card {
+    width: 38%;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.experiencia-titulo {
+    font-family: "kalam", cursive;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.experiencia-titulo:hover{
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.experiencia-texto{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.contenedor1{
+    display: ruby-text;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.bg-primary {
+    background-color: rgb(163, 177, 138);
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .contenedor {
+      flex-direction: column;
+    }
+    
+    .card {
+      width: 100%; /* Hace que cada tarjeta ocupe el ancho completo del contenedor */
+      margin-bottom: 20px; /* Opcional: añade algo de margen entre las tarjetas cuando se apilan */
+    }
+  }
+  
+  /* Los 6 Recuadros de mis futuros proyectos */
