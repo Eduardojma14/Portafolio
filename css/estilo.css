@@ -258,3 +258,48 @@ section p{
   }
   
   /* Los 6 Recuadros de mis futuros proyectos */
+
+  #proyecto-proyecto{
+    margin: 0 80px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .Proyecto1 {
+        flex: 1 1 calc(33.333% - 20px); /* Asegura que sigan estando de 3 en 3 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave para darle profundidad */
+        border-radius: 20px; /* Bordes redondeados para un look más moderno */
+        overflow: hidden; /* Asegura que todo dentro de la carta se quede dentro de los bordes redondeados */
+        margin: 1px; /* Añade un poco de espacio alrededor de las cartas */
+        background-color: rgb(163, 177, 138); /* Fondo blanco para la carta */
+        padding: 1px; /* Espacio dentro de la carta */
+        display: flex; /* Hace que el contenido interno use flexbox */
+        flex-direction: column; /* Organiza el contenido interno en una columna */
+        gap: 5px; /* Espacio entre los elementos internos */
+    }
+
+    .proyecto-titulo{
+        font-family: "kalam", cursive;
+        align-items: flex-end;
+    }
+
+  .proyecto-texto{
+    flex: 0 1 33%; /* Hace que cada elemento ocupe un tercio del contenedor, adaptándose a 3 en 3 */
+    padding: 5px; /* Espaciado para visualización */
+    font-size: 18PX;
+    margin: 1px;
+  }
+
+  .section-titulo{
+    text-align: center;
+    color: rgb(52, 78, 65);
+    margin: 50px;
+    font-family: "kalam", cursive;
+    cursor: pointer;
+  }
+
+  .section-titulo:hover{
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+
