@@ -20,7 +20,7 @@ header{
 }
 .logo{
     margin-top: 40px;
-    margin-left: 270px;
+    margin-left: 280px;
     width: 150px;
     height: 150px;
     cursor: pointer;
@@ -66,7 +66,7 @@ cursor: pointer;
 color: #fff;
 font-size: 15px;
 text-transform: uppercase;
-font-weight: 600;
+font-weight: 500;
 }
 
 .nav-menu li a:hover{
@@ -277,17 +277,19 @@ section p{
         display: flex; /* Hace que el contenido interno use flexbox */
         flex-direction: column; /* Organiza el contenido interno en una columna */
         gap: 5px; /* Espacio entre los elementos internos */
+        text-align: center;
     }
 
     .proyecto-titulo{
+        margin: auto;
         font-family: "kalam", cursive;
-        align-items: flex-end;
+        align-items: center;
     }
 
   .proyecto-texto{
     flex: 0 1 33%; /* Hace que cada elemento ocupe un tercio del contenedor, adaptándose a 3 en 3 */
     padding: 5px; /* Espaciado para visualización */
-    font-size: 18PX;
+    font-size: 16PX;
     margin: 1px;
   }
 
@@ -303,3 +305,66 @@ section p{
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
 
+  /* Pie de pagina */ 
+
+  .pie-pagina{
+    width: 100%;
+    min-height: 25vh;
+    background: rgb(52, 78, 65);
+    background-repeat:no-repeat;
+  }
+
+  .grupo-1{
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    height: 80%;
+    width: 100%;
+  }
+
+  .imag{
+    width: 300px;
+    height: auto;
+  }
+
+  .box{
+    display: flex;
+  }
+
+  .box1{
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactanos{
+    background-color: rgb(163, 177, 138); 
+    border: none;
+    border-radius: 6px;
+    border: 1px solid rgba(163, 177, 138);
+    color: rgb(52, 78, 65);
+    margin: 15px;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .contactanos:hover{
+    background-color: rgb(52, 78, 65);
+    color: rgba(163, 177, 138);
+    transition: .5s;
+  }
+
+  .grupo-2{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+  }
